@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(206.06deg, #fc5300 37.87%, #f19601 83.58%);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-left .ellipse20 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+.navBar ul {
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  /*margin-left: 8rem;*/
+}
+
+.navBar ul li {
+  padding-left: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.navBar p {
+  margin-right: 8rem;
+}
+
+/*Split the screen*/
+.split {
+  max-height: 100vh;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  /*overflow-x: hidden;*/
+}
+
+/*Welcome section*/
+
+.welcome-section {
+  position: absolute;
+  left: 0;
+}
+
+/*Sign up */
+.signup {
+  position: absolute;
+  right: 0;
+
+  background: #00000080;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+  text-align: left;
+  color: azure;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* form */
+
+form {
+  padding: 2.5rem 0.625rem;
+  border-radius: 1.25rem;
+  margin: auto;
+  width: 70%;
+}
+
+.form-floating {
+  margin-bottom: 1rem;
+  display: block;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  resize: none;
+  outline: none;
+}
