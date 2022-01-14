@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FoodRevy</title>
+	{% load static %}
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'users/css/style.css' %}">
+</head>
+<body>
+
+	<div class="main-container">
+		<header>
+			<div class="inner-container">
+				<img src="{% static 'users/images/landingPage/right-image.png' %}" class="bg-img">
+				<img src="{% static 'users/images/landingPage/FoodRevy.png' %}" class="bg-fade-img">
+				<div class="navBar">
+					<div class="logo">
+						<img src="{% static 'users/images/landingPage/top-left-image.png' %}" class="logo-bg">
+						<div class="logo-img">
+							<img src="{% static 'users/images/landingPage/newLogo.png' %}"  >
+						</div>
+					</div>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Menu</a></li>
+						<li><a href="">Community</a></li>
+						<li><a href="">About us</a></li>
+					</ul> 
+
+					<form class="search-nav">
+						<input type="search" name="" placeholder="search" class="search">
+						<button>Register your restaurant</button>
+					</form>
+
+
+				</div>
+
+				<div class="road">
+					<div class="hero-section">
+						<div class="hero-text">
+							<div class="hero-left">
+								<h1>FIND THE BEST<br> RESTUARANTS NEAR YOU!</h1>
+								<p>FoodRevy is a platform that offers an esay way to find the best restuarants and eatries  near you in a few clicks</p>
+							</div>
+							
+							<img src="{% static 'users/images/landingPage/image-01.png' %}" class="">
+						</div>
+
+						<div class="hero-buttons">
+							<button><a href="{% url 'signup' %}">Sign up for free</a></button>
+							<p>The app is available to download on</p>
+							<img src="{% static 'users/images/landingPage/apple-store-logo.png' %}" class="appStore">
+							<img src="{% static 'users/images/landingPage/google-store-logo.png' %}" class="googleStore">
+						</div>
+					</div>
+
+
+					<div class="bottom-images">
+						<div class="header-bottom-left">
+							<img src="{% static 'users/images/landingPage/left-bottom-img.png' %}" class="header-bottom-left-img1">
+						</div>
+						<img src="{% static 'users/images/landingPage/image-03.png' %}" class="header-bottom-left-img2">
+
+						<div class="header-bottom-right">
+							<img src="{% static 'users/images/landingPage/image-02.png' %}">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</header>
+	</div>
+
+
+	<img src="{% static 'users/images/landingPage/horizontal-rectangle.png' %}" class="horizontal-rectangle">
+			
+
+	<main> 
+		<!-- section 1 of the main -->
+		<div class="main-container about-container">
+			<div class="about-section">
+				<div class="about-left">
+					<div class="about-ellipse">
+						<img src="{% static 'users/images/landingPage/about-ellipse2.png' %}" class="about-ellipse2">
+						<img src="{% static 'users/images/landingPage/about-ellipse.png' %}" class="about-ellipse1">
+						<img src="{% static 'users/images/landingPage/cupofdrink.png' %}" class="cupofdrink">
+					</div>
+				</div>
+				<div class="about-right">
+					<h1>FoodRevy</h1>
+					<p>We provide an avenue for food related businesses to meet potential customers. our easy and interactive platform makes transactions seamless and stressfree.</p>
+					<p>Sounds cool right? thats not all, join our community of users to make reviews, post comments, share pictures and lots more...</p>
+					<h3>Register|Setup|Review|Moresales|Order|Reserve</h3>
+					<button><a href="">Start Now</a></button>
+				</div>
+			</div>
+		</div>
+
+
+	</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    206.06deg,
+    rgba(241, 150, 1, 0.9) 37.87%,
+    rgba(252, 83, 0, 0.9) 83.58%
+  );
+  font-family: Ubuntu;
+  font-style: normal;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 300px;
+  width: 300px;
+}
+
+.top-left .logo {
+  height: 150px;
+  width: 120px;
+  left: auto;
+  top: 45px;
+}
+
+.top-left svg {
+  position: absolute;
+  left: auto;
+  top: 42px;
+}
+
+.header {
+}

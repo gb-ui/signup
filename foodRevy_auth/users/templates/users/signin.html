@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodRevy Sign in</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'users/css/signin.css' %}">
+
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header>
+            <div class="top-left">
+                <img src="{% static 'users/images/signup/Ellipse 21.png' %}" alt="" srcset="">
+                <img src="{% static 'users/images/signup/Ellipse 20.png' %}" alt="ellipse" srcset="" class="ellipse20">
+            </div>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="% url 'home' %"> Home</a></li>
+                    <li><a href="#"> Menu</a></li>
+                    <li><a href="#"> Community</a></li>
+                    <li><a href="#" class="about-us"> About Us</a></li>
+                </ul>
+
+                <p>English(USA)</p>
+            </nav>
+        </header>
+
+
+        <div class="split welcome-section">
+            <div class="centered">
+                <div class="logo" style="margin-top: 10rem;">
+                    <img src="{% static 'users/images/signup/logo.png' %}" alt="logo" style="height: 120px; width: 100px;">
+                </div>
+                <div class="welcome" style="margin-top: 3rem; font-size: 3rem; font-weight: 600; ">
+                    <p>Welcome Back !</p>
+                </div>
+                <div>
+                    <img src="{% static 'users/images/signup/tangerine.png' %}" alt="" style="height: 100%; width: 70%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="split signin">
+            <h3 style="margin-top: 8rem; margin-left: 6.5rem;"> Sign in </h3>
+            <p style="margin-top: 1rem; margin-bottom: 2rem; margin-left: 6.5rem;">welcome back, please input your details</p>
+
+            <div class="">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="form-floating ">
+
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
+
+                    </div>
+                    
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+
+                    </div>
+                    <div class="forgot">
+                    <p>
+                        <a href="#"> forgot password?</a>
+                    </p>
+                    </div>
+                    <div class="checkbox" style="margin-top: 1rem;">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember username and password
+                        </label>
+                    </div>
+
+
+                    <div class="bottom-links">
+                        <button type="submit" value="Submit">Sign in</button>
+                        <p>Or sign in with </p>
+                        <a href="#"><img src="{% static 'users/images/signup/google.png' %}"></a>
+                        <p>New to FoodRevy? <a href="{% url 'signup' %}" style="color: aqua;"><span>Sign up</span></p>
+                        </a>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  background: linear-gradient(
+    206.06deg,
+    rgba(241, 150, 1, 0.9) 37.87%,
+    rgba(252, 83, 0, 0.9) 83.58%
+  );
+}
+
+/* .container {
+  background: linear-gradient(
+    206.06deg,
+    rgba(241, 150, 1, 0.9) 37.87%,
+    rgba(252, 83, 0, 0.9) 83.58%
+  );
+  text-align: center;
+  height: 100%;
+  min-height: 150vh;
+  width: 100%;
+} */
+
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  border-radius: 0rem;
+  height: 130vh;
+  background: linear-gradient(
+    206.06deg,
+    rgba(241, 150, 1, 0.9) 37.87%,
+    rgba(252, 83, 0, 0.9) 83.58%
+  );
+}
+
+.logo {
+  margin-top: 2rem;
+  transform: scale(0.5);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 32%;
+  transform: scale(0.4);
+}
+
+.back :hover {
+  transform: scale(1.5);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a :hover {
+  border-bottom: 4px solid rgba(241, 150, 1, 0.9);
+}
+
+.success {
+  transform: scale(0.3);
+  margin-top: -4rem;
+}

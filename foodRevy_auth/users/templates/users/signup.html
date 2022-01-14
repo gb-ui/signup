@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodRevy Sign up</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'users/css/signup.css' %}">
+
+</head>
+
+<body>
+    {% block content %}
+      
+    <div class="main-container">
+    
+        <header>
+            <div class="top-left">
+                <img src="{% static 'users/images/signup/Ellipse 21.png' %}" alt="" srcset="">
+                <img src="{% static 'users/images/signup/Ellipse 20.png' %}" alt="ellipse" srcset="" class="ellipse20">
+            </div>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="{% url 'home' %}"> Home</a></li>
+                    <li><a href="#"> Menu</a></li>
+                    <li><a href="#"> Community</a></li>
+                    <li><a href="#" class="about-us"> About Us</a></li>
+                </ul>
+    
+                <p>English(USA)</p>
+            </nav>
+        </header>
+    
+    
+        <div class="split welcome-section">
+            <div class="centered">
+                <div class="logo" style="margin-top: 10rem;">
+                    <img src="{% static 'users/images/signup/logo.png' %}" alt="logo" style="height: 120px; width: 100px;">
+                </div>
+                <div class="welcome" style="margin-top: 3rem; font-size: 3rem; font-weight: 600; ">
+                    <p>Welcome </p>
+                </div>
+                <div>
+                    <img src="{% static 'users/images/signup/tangerine.png' %}" alt="" style="height: 100%; width: 70%;">
+                </div>
+            </div>
+        </div>
+    
+        <div class="split signup">
+            <h3 style="margin-top: 5rem; margin-left: 6.5rem;"> Create Account </h3>
+        
+            <div class="">
+                <form method="post" action="">
+                    {% csrf_token %}
+                    
+                    <div class="form-floating ">
+        
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
+        
+                    </div>
+                    <div class="form-floating ">
+        
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Full Name">
+        
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Phone Number">
+        
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="re-enter Password">
+        
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me"> I agree to the terms of service
+                        </label>
+                    </div>
+
+                    <div class="bottom-links">
+                        <button type="submit" value="Submit">Sign up</button>
+                        <p>Or sign up with </p>
+                        <a href="#"><img src="{% static 'users/images/signup/google.png' %}"></a>
+                        <p>Already have an account? <a href="{% url 'signin' %}" style="color: aqua;"><span>Sign in</span></p></a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+
+</html>

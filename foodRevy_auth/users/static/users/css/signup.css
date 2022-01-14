@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(206.06deg, #fc5300 37.87%, #f19601 83.58%);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/*a :hover {
+  padding-bottom: 2px solid blue;
+}*/
+.main-container {
+  height: 100vh;
+}
+
+.top-left .ellipse20 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 2rem;
+  z-index: 999;
+}
+.navBar ul {
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  cursor: pointer;
+  margin-left: 27.5rem;
+}
+
+.navBar ul li {
+  padding-left: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+.about-us{
+  opacity: .8;
+}
+.navBar ul li a{
+  color: #FFFFFF;
+  cursor: pointer;
+  opacity: .8;
+}
+.navBar ul li a:hover{
+  border-bottom: 2px solid #FFC700;
+}
+
+.navBar p {
+  margin-right: 5.5rem;
+  color: white;
+}
+
+/*Split the screen*/
+.split {
+  max-height: 100vh;
+  height: 100%;
+  width: 51%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  /*overflow-x: hidden;*/
+}
+
+/*Welcome section*/
+
+.welcome-section {
+  position: absolute;
+  left: 0;
+}
+
+/*Sign up */
+.signup {
+  position: absolute;
+  right: 0;
+  background: #00000080;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+  text-align: left;
+  color: azure;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* form */
+
+form {
+  padding: 2.5rem 0.625rem;
+  border-radius: 1.25rem;
+  margin: auto;
+  width: 70%;
+}
+
+.form-floating {
+  margin-bottom: 1rem;
+  display: block;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  padding: 0.575rem 0.85rem;
+  color: #ffffff;
+  background-color: inherit;
+  border-bottom: 3px solid white;
+  border: none;
+  border-radius: 0.25rem;
+  resize: none;
+  outline: none;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  border-bottom: 2px solid #fff;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.bottom-links {
+  text-align: center;
+  margin: 2rem;
+  opacity: .8;
+}
+
+.bottom-links button {
+  padding: 0.75rem 2.5rem;
+  border-radius: 1rem;
+  background-color: rgb(255, 153, 0);
+}
+.bottom-links button:hover{
+  background-color: transparent;
+  color: #FFF;
+}
+.bottom-links p {
+  padding-top: 1rem;
+  margin: .5rem;
+}
+.bottom-links a img{
+  width: 15%;
+  margin-top: .5rem;
+}
